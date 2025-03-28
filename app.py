@@ -214,9 +214,9 @@ st.text(f"Token Count: {question_tokens} / {TOKEN_LIMIT}")
 if question_tokens > TOKEN_LIMIT:
     st.error("Your question exceeds the 1000-token limit. Please shorten it.")
 
-# 6. FAQ Dropdown (optional)
+# 6. FAQ Dropdown 
 faq_choice = st.selectbox(
-    "Or pick a Frequently Asked Question",
+    "FAQ",
     ["(None)"] + faq_options,
     help="Select a FAQ to auto-fill the question box if you like."
 )
